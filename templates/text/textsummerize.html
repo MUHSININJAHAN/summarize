@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Text{% endblock %}
+
+
+{% block body %}
+<br><br>
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <div class="send_btn">
+        <input style="background-color: orange" class="send_btn" type="submit">
+    </div>
+</form>
+
+<h2 style="padding: 10px; color : orange;"><b>{{msg}}</b> </h2>
+<h2 style="padding: 10px">{{summery}}</h2><br><br>
+
+{% endblock %}
+
+

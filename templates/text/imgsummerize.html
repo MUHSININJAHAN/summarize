@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Text{% endblock %}
+
+
+{% block body %}
+<br><br>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <br><br>
+
+    <div class="form-group">
+        <input name="pictures" type="file">
+    </div>
+    <div class="send_btn">
+        <input style="background-color: orange" class="send_btn" type="submit">
+    </div>
+</form>
+
+<h2 style="padding: 10px; color : orange;"><b>{{msg}}</b> </h2>
+<h2 style="padding: 10px">{{summery}}</h2><br><br>
+
+{% endblock %}
+
+

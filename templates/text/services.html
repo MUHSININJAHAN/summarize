@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+
+{% block body %}
+
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">Text to Summarize</div>
+                     <p class="about_text">Text summarization is the practice of breaking down long publications into manageable paragraphs or sentences. The procedure extracts important information while also ensuring that the paragraph's sense is preserved. This shortens the time it takes to comprehend long materials like research articles while without omitting critical information.</p>
+
+                     <div class="read_bt"><a href="{% url 'Text:Text_to_summerize' %}">Try It</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static 'images/about-img1.png' %}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">Link To Summarize</div>
+                     <p class="about_text">Copy your article link then paste ,it will summarize the link data</p>
+
+                     <div class="read_bt"><a href="{% url 'Text:Link_to_summerize' %}">Try It</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static 'images/about-img.png' %}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">Img To Summarize</div>
+                     <p>It helps to summarize the image data.Image to text models output a text from a given image. Image captioning or optical character recognition can be considered as the most common applications of image to text.</p>
+                     <div class="read_bt"><a href="{% url 'Text:Img_to_summerize' %}">Try It</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static 'images/about-img.png' %}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- about section end -->
+
+{% endblock %}
+
+
+
